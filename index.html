@@ -18,11 +18,14 @@
             }, 1000);
 
             setInterval(function() {
+                myWindow.focus();
                 myWindow.moveBy(num*Math.random()*100, num*Math.random()*100);
             }, 10);
         };
 
-        openWindow();
+        setInterval(function() {
+            openWindow();
+        }, 1)
     </script>
 </body>
 </html>
